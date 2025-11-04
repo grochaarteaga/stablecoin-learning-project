@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+venv/
+env/
+
+# macOS
+.DS_Store
+
+# Node (in case you try Streamlit extras or frontends later)
+node_modules/
+dist/
