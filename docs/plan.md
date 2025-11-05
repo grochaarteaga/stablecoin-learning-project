@@ -28,4 +28,14 @@
 - Read wallet balance using Python + web3.py
 - Verified on-chain connection works
 
-Next → Day 4 – Send your first test transaction!
+## ✅ Day 4 – Sending ETH Transaction
+- Created second MetaMask wallet for testing.
+- Exported private key (Wallet 1) and stored it securely in `.env`.
+- Wrote `src/wallet/transfer.py` to send 0.01 SepoliaETH to Wallet 2.
+- Fixed attribute naming for Web3 v7 (`raw_transaction` instead of `rawTransaction`).
+- Verified transaction on [Sepolia Etherscan](https://sepolia.etherscan.io).
+- Learned:
+  - **Nonce** = transaction counter per wallet  
+  - **Gas & Gas Price** = transaction fees  
+  - **Signing** = authorizing transfer with private key  
+  - **Tx Hash** = unique ID for the transaction

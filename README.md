@@ -54,3 +54,69 @@ Current block number: 9560105
  Wallet: 0xB7C4Eb5F98Fad995E940476711fe0785b66D5851
 Balance: 0.149582088703659 SepoliaETH
 
+
+### 🚀 Day 4 – Sending Transactions
+- Created a second MetaMask wallet  
+- Stored both wallet addresses + private key in `.env` (testnet only)  
+- Wrote `src/wallet/transfer.py` to send 0.01 SepoliaETH  
+- Verified the transaction on [Sepolia Etherscan](https://sepolia.etherscan.io)
+
+**Example Output**
+🚀 Transaction sent! Hash: 0xbb572c108efbcca7931230a7972a135b477cf836b0caf724ffd093bdddd9dd9f
+🔍 View it on: https://sepolia.etherscan.io/tx/0xbb572c108efbcca7931230a7972a135b477cf836b0caf724ffd093bdddd9dd9f
+
+
+
+---
+
+## 🧰 Tech Stack
+Python · web3.py · dotenv · Alchemy · MetaMask · Streamlit (later)
+
+---
+
+## 📁 Project Structure
+
+stablecoin-learning-project/
+├── README.md
+├── .env
+├── requirements.txt
+├── docs/
+│ └── plan.md
+└── src/
+├── main.py
+└── wallet/
+├── balance.py
+└── transfer.py
+
+
+---
+
+## ⚙️ How to Run
+
+1️⃣ Clone the repo  
+```bash
+git clone https://github.com/grochaarteaga/stablecoin-learning-project.git
+cd stablecoin-learning-project
+
+2️⃣ Activate virtual env and install deps
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+
+3️⃣ Add your .env
+ALCHEMY_URL=https://eth-sepolia.g.alchemy.com/v2/YOUR_KEY
+SENDER_PRIVATE_KEY=your_wallet1_private_key
+SENDER_ADDRESS=0xYourWallet1
+RECEIVER_ADDRESS=0xYourWallet2
+
+
+4️⃣ Run connection test
+python src/main.py
+
+5️⃣ Run balance check
+python src/wallet/balance.py
+
+6️⃣ Send test transaction
+python src/wallet/transfer.py
+
+
