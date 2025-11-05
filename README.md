@@ -43,52 +43,14 @@ This repository documents my **14-day journey** learning how stablecoins and cry
 ✅ Connected to Ethereum Sepolia testnet!
 Current block number: 9560105
 
+## ✅ Day 3 – Wallet Setup & Balance Reading
+- Added the **Sepolia** test network to MetaMask  
+  *(MetaMask now auto-names it “Sepolia” with symbol “SepoliaETH”)*.
+- Requested **free test ETH** from the Sepolia faucet (0.15 – 0.5 SepoliaETH).  
+- Copied wallet address and created script `src/wallet/balance.py` to read balance.  
+- Confirmed the program returns the live on-chain value.
 
-Next step → **Day 3: Connect MetaMask and read wallet balance.**
+**Output Example**
+ Wallet: 0xB7C4Eb5F98Fad995E940476711fe0785b66D5851
+Balance: 0.149582088703659 SepoliaETH
 
----
-
-## 🗂️ Project Structure
-
-
-
-stablecoin-learning-project/
-├── README.md
-├── .gitignore
-├── requirements.txt
-├── .env
-├── docs/
-│ └── plan.md
-└── src/
-└── main.py
-
-
----
-
-## ⚙️ How to Run
-
-1. Clone the repo  
-   ```bash
-   git clone https://github.com/grochaarteaga/stablecoin-learning-project.git
-   cd stablecoin-learning-project
-
-
-Create a virtual environment
-
-python3 -m venv .venv
-source .venv/bin/activate
-
-
-Install dependencies
-
-pip install -r requirements.txt
-
-
-Add your .env file with your Alchemy URL
-
-ALCHEMY_URL=https://eth-sepolia.g.alchemy.com/v2/YOUR_API_KEY
-
-
-Run the script
-
-python src/main.py
