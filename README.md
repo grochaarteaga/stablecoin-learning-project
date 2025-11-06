@@ -78,6 +78,14 @@ Balance: 0.149582088703659 SepoliaETH
 Balance: 0.0 DAI
 
 
+### 💸 Day 6 – Token Transfers
+- Implemented ERC-20 `transfer()` using web3.py.
+- Sent (or simulated) 0.1 DAI between wallets.
+- Learned about gas, nonce, and transaction signing for tokens.
+
+**Example Output**
+🚀 Token transfer submitted! Hash: 0x0cf4cb306e31930974e3ab7c56c6c8c864e2132edfdec0a2344edbf2d02829b6
+🔍 View on Etherscan: https://sepolia.etherscan.io/tx/0x0cf4cb306e31930974e3ab7c56c6c8c864e2132edfdec0a2344edbf2d02829b6
 
 **Concepts Learned**
 - Smart-contract = program that lives on the blockchain.  

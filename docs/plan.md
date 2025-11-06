@@ -59,3 +59,11 @@
 - Key takeaways:
   - Wrong contract/network ⇒ no code ⇒ `BadFunctionCallOutput`
   - Always check Etherscan → “Contract” tab = real code
+
+
+## ✅ Day 6 – Sending ERC-20 Tokens
+- Used `transfer()` to send 0.1 DAI between two wallets.
+- Learned how token transfers differ from ETH transfers.
+- Understood how `approve()` and `allowance()` enable DeFi apps.
+- Observed that insufficient balance transactions still appear on-chain.
+- Verified tx hash on Sepolia Etherscan.
