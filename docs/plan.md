@@ -20,14 +20,15 @@
 - Added the key to `.env` and wrote the first script (`src/main.py`) to connect.
 - Verified connection and printed the latest Sepolia block number.  
 
+---
 
 ## Day 3 – Wallet Setup & Balance Reading
-
 - Added Sepolia network in MetaMask
 - Received 0.5 SepoliaETH from faucet
 - Read wallet balance using Python + web3.py
 - Verified on-chain connection works
 
+---
 ## ✅ Day 4 – Sending ETH Transaction
 - Created second MetaMask wallet for testing.
 - Exported private key (Wallet 1) and stored it securely in `.env`.
@@ -39,3 +40,22 @@
   - **Gas & Gas Price** = transaction fees  
   - **Signing** = authorizing transfer with private key  
   - **Tx Hash** = unique ID for the transaction
+
+---
+
+## ✅ Day 5 – Interacting with ERC-20 Smart-Contract (DAI)
+- Reviewed what **smart-contracts** are: self-executing programs on the blockchain.  
+- Understood that stablecoins (like USDC) are smart-contracts that maintain internal ledgers of ownership.  
+- Realized Circle has not deployed USDC on Sepolia (only on Mainnet / Goerli).  
+- Connected to verified **DAI** contract on Sepolia (`0x68194a729C2450ad26072b3D33ADaCbcef39D574`).  
+- Created `src/wallet/token_balance.py` to read:
+  - `symbol()` → returns token symbol  
+  - `decimals()` → returns decimal precision  
+  - `balanceOf(address)` → returns token balance  
+- Verified output and confirmed 0 DAI balance (no tokens yet).  
+- Learned difference between:
+  - **Native ETH** – balance lives on the account  
+  - **Tokens (ERC-20)** – balance lives inside a smart-contract  
+- Key takeaways:
+  - Wrong contract/network ⇒ no code ⇒ `BadFunctionCallOutput`
+  - Always check Etherscan → “Contract” tab = real code

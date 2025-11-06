@@ -67,6 +67,33 @@ Balance: 0.149582088703659 SepoliaETH
 
 
 
+### 🧩 Day 5 – Interacting with ERC-20 Smart-Contracts
+- Learned what **smart-contracts** are and why tokens like USDC are contracts.
+- Used verified **DAI** contract on Sepolia (`0x68194a729C2450ad26072b3D33ADaCbcef39D574`).
+- Created `src/wallet/token_balance.py` to read token info (`symbol`, `decimals`, `balanceOf`).
+
+**Example Output**
+🪙 Token: DAI
+💰 Address: 0xB7C4Eb5F98Fad995E940476711fe0785b66D5851
+Balance: 0.0 DAI
+
+
+
+**Concepts Learned**
+- Smart-contract = program that lives on the blockchain.  
+- ERC-20 defines standard token functions (`balanceOf`, `transfer`, `approve`).  
+- Sepolia doesn’t host official USDC, so we use mock DAI for testing.  
+- On Mainnet, Circle’s verified USDC contract address works the same way.  
+
+---
+
+## 🧰 Tech Stack
+Python · web3.py · dotenv · Alchemy · MetaMask · Streamlit (later)
+
+---
+
+## 📁 Project Structure
+
 ---
 
 ## 🧰 Tech Stack
@@ -110,13 +137,14 @@ SENDER_ADDRESS=0xYourWallet1
 RECEIVER_ADDRESS=0xYourWallet2
 
 
-4️⃣ Run connection test
+4. Run connection test
 python src/main.py
 
-5️⃣ Run balance check
+5️. Run balance check
 python src/wallet/balance.py
 
-6️⃣ Send test transaction
+6. Send test transaction
 python src/wallet/transfer.py
 
-
+7. Read DAI token balance
+python src/wallet/token_balance.py
