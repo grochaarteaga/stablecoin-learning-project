@@ -87,6 +87,16 @@ Balance: 0.0 DAI
 🚀 Token transfer submitted! Hash: 0x0cf4cb306e31930974e3ab7c56c6c8c864e2132edfdec0a2344edbf2d02829b6
 🔍 View on Etherscan: https://sepolia.etherscan.io/tx/0x0cf4cb306e31930974e3ab7c56c6c8c864e2132edfdec0a2344edbf2d02829b6
 
+### 🧠 Day 7 – Approve & Allowance
+- Implemented ERC-20 `approve()` and `allowance()`.
+- Understood how DeFi apps use these to spend tokens.
+- Verified approval on Etherscan.
+
+**Example Output**
+✅ Approve transaction sent! Hash: 0xcb1d42fd6031df8322f17d5d644bee81db773b22adca1d26432306f93e2eff99
+🔍 View it on: https://sepolia.etherscan.io/tx/0xcb1d42fd6031df8322f17d5d644bee81db773b22adca1d26432306f93e2eff99
+📊 Allowance for spender: 0.0 DAI
+
 **Concepts Learned**
 - Smart-contract = program that lives on the blockchain.  
 - ERC-20 defines standard token functions (`balanceOf`, `transfer`, `approve`).  

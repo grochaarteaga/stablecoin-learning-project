@@ -67,3 +67,13 @@
 - Understood how `approve()` and `allowance()` enable DeFi apps.
 - Observed that insufficient balance transactions still appear on-chain.
 - Verified tx hash on Sepolia Etherscan.
+
+## ✅ Day 7 – Approve & Allowance
+- Learned that DeFi apps cannot move tokens without permission.
+- Explored how ERC-20 `approve()` and `allowance()` work.
+- Built `token_approve.py` to authorize a spender for 1 DAI.
+- Verified on Etherscan that the approval transaction was confirmed.
+- Learned that:
+  - `approve` gives rights,
+  - `allowance` checks limits,
+  - `transferFrom` spends the approved tokens.
