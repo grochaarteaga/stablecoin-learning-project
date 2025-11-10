@@ -93,9 +93,9 @@ Balance: 0.0 DAI
 - Verified approval on Etherscan.
 
 **Example Output**
-✅ Approve transaction sent! Hash: 0xcb1d42fd6031df8322f17d5d644bee81db773b22adca1d26432306f93e2eff99
-🔍 View it on: https://sepolia.etherscan.io/tx/0xcb1d42fd6031df8322f17d5d644bee81db773b22adca1d26432306f93e2eff99
-📊 Allowance for spender: 0.0 DAI
+Approve transaction sent! Hash: 0x0a2dd40e436283324d8d3d46654ed8692f56b590e8e035e6caa9e428e29c81c4
+🔍 View it on: https://sepolia.etherscan.io/tx/0x0a2dd40e436283324d8d3d46654ed8692f56b590e8e035e6caa9e428e29c81c4
+📊 Allowance for spender: 1.0 DAI
 
 **Concepts Learned**
 - Smart-contract = program that lives on the blockchain.  
