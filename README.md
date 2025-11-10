@@ -103,6 +103,13 @@ Approve transaction sent! Hash: 0x0a2dd40e436283324d8d3d46654ed8692f56b590e8e035
 - Sepolia doesn’t host official USDC, so we use mock DAI for testing.  
 - On Mainnet, Circle’s verified USDC contract address works the same way.  
 
+### 🌍 Day 9 – Mainnet Connection
+- Connected to Ethereum Mainnet (real blockchain).
+- Read wallet’s real ETH balance in USD.
+- Verified exact match with MetaMask.
+- No private key used (read-only).
+
+
 ---
 
 ## 🧰 Tech Stack

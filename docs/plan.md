@@ -77,3 +77,11 @@
   - `approve` gives rights,
   - `allowance` checks limits,
   - `transferFrom` spends the approved tokens.
+
+## ✅ Day 9 – Connect to Ethereum Mainnet
+- Created new Alchemy Mainnet app.
+- Connected to live Ethereum network.
+- Read real ETH balance from MetaMask wallet.
+- Fetched live ETH/USD price using CoinGecko.
+- Verified that Python balance matches MetaMask.
+- Learned mainnet = real ETH, Sepolia = test ETH.
