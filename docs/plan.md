@@ -106,3 +106,11 @@
 - Clickable hashes link directly to Etherscan.
 - Observed slight indexing delay (normal for blockchain explorers).
 - Streamlit now shows a complete live wallet overview: balances + transaction history.
+
+## ✅ Day 13 – Real USDC Transfer (Mainnet)
+- Completed first real ERC-20 transfer via Python.
+- Used official USDC contract on Ethereum mainnet.
+- Signed transaction locally (safe key handling).
+- Verified success on Etherscan.
+- Learned how blockchain transactions move tokens through smart contracts.
+

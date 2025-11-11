@@ -133,6 +133,13 @@ Approve transaction sent! Hash: 0x0a2dd40e436283324d8d3d46654ed8692f56b590e8e035
 
 ---
 
+### 💸 Day 13 – Real USDC Transfer (Mainnet)
+- Connected to Alchemy mainnet node.
+- Built and signed USDC transfer using Web3.py.
+- Confirmed successful transaction on Etherscan.
+- Demonstrated full end-to-end wallet integration from code.
+
+
 ### 🛠️ Technical Notes
 - Using Etherscan V2 ensures long-term API stability (post-Aug 2025).
 - Minor indexing delay is expected before new transactions appear.
