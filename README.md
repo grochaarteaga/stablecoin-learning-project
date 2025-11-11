@@ -139,6 +139,11 @@ Approve transaction sent! Hash: 0x0a2dd40e436283324d8d3d46654ed8692f56b590e8e035
 - Confirmed successful transaction on Etherscan.
 - Demonstrated full end-to-end wallet integration from code.
 
+### 💰 Day 14 – Dashboard with ETH, DAI & USDC
+- Displays live ETH, DAI, and USDC balances from Ethereum Mainnet.
+- Calculates USD value using CoinGecko API.
+- Automatically updates portfolio total.
+
 
 ### 🛠️ Technical Notes
 - Using Etherscan V2 ensures long-term API stability (post-Aug 2025).

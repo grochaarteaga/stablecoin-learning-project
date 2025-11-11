@@ -114,3 +114,8 @@
 - Verified success on Etherscan.
 - Learned how blockchain transactions move tokens through smart contracts.
 
+## ✅ Day 14 – Add USDC to Portfolio Dashboard
+- Added support for USDC balance and live USD value.
+- Updated layout to display ETH, DAI, and USDC side-by-side.
+- Uses CoinGecko for token prices and Alchemy for on-chain balances.
+- Shows total portfolio value in USD.

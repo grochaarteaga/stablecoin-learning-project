@@ -24,11 +24,7 @@ if not w3.is_connected():
 # --- Wallet Info ---
 st.write(f"**Wallet:** `{address}`")
 
-# --- Fetch ETH Balance ---
-eth_balance = w3.eth.get_balance(address) / 10**18
-
-# --- Fetch Token Balance (DAI example) ---
-token_address = "0x6B175474E89094C44Da98b954EedeAC495271d0F"  # Mainnet DAI
+# --- Basic ERC-20 ABI (DAI, USDC, etc.) ---
 token_abi = [
     {"constant": True, "inputs": [{"name": "_owner", "type": "address"}],
      "name": "balanceOf", "outputs": [{"name": "balance", "type": "uint256"}],
@@ -38,30 +34,46 @@ token_abi = [
     {"constant": True, "inputs": [], "name": "symbol",
      "outputs": [{"name": "", "type": "string"}], "type": "function"},
 ]
-token = w3.eth.contract(address=w3.to_checksum_address(token_address), abi=token_abi)
-decimals = token.functions.decimals().call()
-symbol = token.functions.symbol().call()
-token_balance = token.functions.balanceOf(address).call() / (10 ** decimals)
+
+# --- Fetch ETH Balance ---
+eth_balance = w3.eth.get_balance(address) / 10**18
+
+# --- Fetch DAI Balance ---
+dai_address = "0x6B175474E89094C44Da98b954EedeAC495271d0F"
+dai_contract = w3.eth.contract(address=w3.to_checksum_address(dai_address), abi=token_abi)
+dai_decimals = dai_contract.functions.decimals().call()
+dai_symbol = dai_contract.functions.symbol().call()
+dai_balance = dai_contract.functions.balanceOf(address).call() / (10 ** dai_decimals)
+
+# --- Fetch USDC Balance ---
+usdc_address = "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+usdc_contract = w3.eth.contract(address=w3.to_checksum_address(usdc_address), abi=token_abi)
+usdc_decimals = usdc_contract.functions.decimals().call()
+usdc_symbol = usdc_contract.functions.symbol().call()
+usdc_balance = usdc_contract.functions.balanceOf(address).call() / (10 ** usdc_decimals)
 
 # --- Fetch Live Prices ---
 prices = requests.get(
     "https://api.coingecko.com/api/v3/simple/price",
-    params={"ids": "ethereum,dai", "vs_currencies": "usd"}
+    params={"ids": "ethereum,dai,usd-coin", "vs_currencies": "usd"}
 ).json()
 eth_price = prices["ethereum"]["usd"]
 dai_price = prices["dai"]["usd"]
+usdc_price = prices["usd-coin"]["usd"]
 
 # --- Calculate Values ---
 eth_usd = eth_balance * eth_price
-dai_usd = token_balance * dai_price
-total_usd = eth_usd + dai_usd
+dai_usd = dai_balance * dai_price
+usdc_usd = usdc_balance * usdc_price
+total_usd = eth_usd + dai_usd + usdc_usd
 
 # --- Display Portfolio Summary ---
 st.subheader("📊 Portfolio Summary")
-col1, col2, col3 = st.columns(3)
+col1, col2, col3, col4 = st.columns(4)
 col1.metric("ETH Balance", f"{eth_balance:.5f} ETH", f"${eth_usd:,.2f}")
-col2.metric("DAI Balance", f"{token_balance:.2f} {symbol}", f"${dai_usd:,.2f}")
-col3.metric("💵 Total Value", f"${total_usd:,.2f}")
+col2.metric("DAI Balance", f"{dai_balance:.2f} {dai_symbol}", f"${dai_usd:,.2f}")
+col3.metric("USDC Balance", f"{usdc_balance:.2f} {usdc_symbol}", f"${usdc_usd:,.2f}")
+col4.metric("💵 Total Value", f"${total_usd:,.2f}")
 
 st.divider()
 st.subheader("🧾 Recent Transactions")
