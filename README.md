@@ -119,6 +119,25 @@ Approve transaction sent! Hash: 0x0a2dd40e436283324d8d3d46654ed8692f56b590e8e035
 - Used Streamlit to display ETH and DAI values in USD.
 - Data sources: Alchemy (on-chain) + CoinGecko (off-chain).
 
+---
+
+### 🧾 Day 12 – Transaction History (Etherscan V2)
+- Upgraded from deprecated Etherscan V1 API to the new V2 Multichain API.
+- Added `chainid=1` for Ethereum mainnet compatibility.
+- Displayed the last 5 transactions directly in the dashboard.
+- Each transaction hash links to its Etherscan page.
+- Dashboard now combines:
+  - 🔹 Live ETH & DAI balances
+  - 🔹 Real-time USD values (CoinGecko)
+  - 🔹 Recent transaction history (Etherscan)
+
+---
+
+### 🛠️ Technical Notes
+- Using Etherscan V2 ensures long-term API stability (post-Aug 2025).
+- Minor indexing delay is expected before new transactions appear.
+- Optional: install `watchdog` for faster Streamlit reloads.
+
 
 ---
 

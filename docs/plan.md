@@ -99,3 +99,10 @@
 - Displayed live ETH and DAI values in USD using CoinGecko API.
 - Built first interactive crypto dashboard.
 
+## ✅ Day 12 – Transaction History (Etherscan V2 API)
+- Integrated Etherscan **V2 Multichain API** to replace deprecated V1.
+- Added `chainid=1` parameter for Ethereum mainnet.
+- Displayed last 5 transactions in both terminal and Streamlit dashboard.
+- Clickable hashes link directly to Etherscan.
+- Observed slight indexing delay (normal for blockchain explorers).
+- Streamlit now shows a complete live wallet overview: balances + transaction history.
