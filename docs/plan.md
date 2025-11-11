@@ -85,3 +85,10 @@
 - Fetched live ETH/USD price using CoinGecko.
 - Verified that Python balance matches MetaMask.
 - Learned mainnet = real ETH, Sepolia = test ETH.
+
+## ✅ Day 10 – Gas & Simulation
+- Learned what gas, gas price, and gas limit mean.
+- Created script to estimate gas usage for ETH transfers.
+- Calculated estimated gas fee in ETH and USD.
+- Understood that estimate_gas simulates execution without broadcasting.
+- Learned difference in cost between simple and complex transactions.

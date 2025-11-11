@@ -109,6 +109,10 @@ Approve transaction sent! Hash: 0x0a2dd40e436283324d8d3d46654ed8692f56b590e8e035
 - Verified exact match with MetaMask.
 - No private key used (read-only).
 
+### ⛽ Day 10 – Gas & Simulation
+- Simulated real ETH transaction cost without sending.
+- Estimated gas usage and converted fee to USD.
+- Learned how Ethereum fees work in practice.
 
 ---
 
