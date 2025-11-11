@@ -114,6 +114,12 @@ Approve transaction sent! Hash: 0x0a2dd40e436283324d8d3d46654ed8692f56b590e8e035
 - Estimated gas usage and converted fee to USD.
 - Learned how Ethereum fees work in practice.
 
+### 🖥️ Day 11 – Streamlit Dashboard
+- Added interactive dashboard to visualize wallet balances.
+- Used Streamlit to display ETH and DAI values in USD.
+- Data sources: Alchemy (on-chain) + CoinGecko (off-chain).
+
+
 ---
 
 ## 🧰 Tech Stack

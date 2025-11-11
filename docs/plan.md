@@ -92,3 +92,10 @@
 - Calculated estimated gas fee in ETH and USD.
 - Understood that estimate_gas simulates execution without broadcasting.
 - Learned difference in cost between simple and complex transactions.
+
+## ✅ Day 11 – Portfolio Dashboard
+- Installed Streamlit and created `app.py`.
+- Connected to Ethereum mainnet and fetched balances.
+- Displayed live ETH and DAI values in USD using CoinGecko API.
+- Built first interactive crypto dashboard.
+
