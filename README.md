@@ -2,6 +2,24 @@
 
 This repository documents my **14-day journey** learning how stablecoins and crypto transactions work by building a **mini stablecoin wallet** in Python.
 
+# From zero to a real USDC transfer on mainnet, in fourteen days
+
+I work in payments and I did not want to reason about stablecoins from slides, so I gave myself two weeks to go from nothing to moving real money onchain from my own code, and I logged every day of it.
+
+**Where it ended up**
+
+- A signed USDC transfer on Ethereum mainnet, confirmed on Etherscan
+- ERC 20 `approve` and `allowance` implemented and verified, the mechanics every DeFi and payment integration depends on
+- Gas estimation and cost simulation before sending
+- A dashboard showing live ETH, DAI and USDC balances with USD valuation from CoinGecko
+- Transaction history through the Etherscan v2 multichain API, migrated off the deprecated v1
+
+**Why the daily log is still here**
+
+Because the log is the point. Most of my work is going into a domain I do not know yet and being useful in it quickly. This is fourteen days of that, written down while it happened.
+
+Python · web3.py · Alchemy · Streamlit · Etherscan · CoinGecko
+
 ---
 
 ## 🧠 Project Goals
